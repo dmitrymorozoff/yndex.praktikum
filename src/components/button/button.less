@@ -1,0 +1,50 @@
+@import '../../global/colors.less';
+
+.button_style_default {
+  width: 15rem;
+  height: 2rem;
+  color: @white;
+  background: @ultramarineBlue;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button_style_round-base {
+  background: #3369F3;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  cursor: pointer;
+ 
+ &::before {
+   content: '';
+   width: 0.5rem;
+   height: 0.5rem;
+   border-style: solid;
+   border-color: @lotion;
+   position: absolute;
+   transform: rotate(-135deg);
+   border-width: 0.15rem 0.15rem 0 0;
+ }
+}
+
+.button_style_round-arrow-left {
+  .button_style_round-base;
+  &::before {
+    top: 30%;
+    left: 40%;
+    transform: rotate(-135deg);
+  }
+}
+
+.button_style_round-arrow-right {
+  .button_style_round-base;
+  &::before {
+    top: 30%;
+    right: 35%;
+    transform: rotate(45deg);
+  }
+}

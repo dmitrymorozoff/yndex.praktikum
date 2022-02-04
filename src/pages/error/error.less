@@ -1,0 +1,38 @@
+@import '../../global/styles.less';
+@import '../../global/fonts.less';
+@import '../../global/colors.less';
+
+.errorPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.errorPageContainer__errorCode {
+  .fontRegular;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: @eerieBlack;
+  margin-bottom: 3rem;
+}
+
+.errorPageContainer__errorDescription {
+  .fontRegular;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: @eerieBlack;
+}
+
+.errorPageContainer__navToChats {
+  .fontRegular;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: @ultramarineBlue;
+  cursor: pointer;
+}

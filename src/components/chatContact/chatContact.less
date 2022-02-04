@@ -1,0 +1,56 @@
+@import '../../global/styles.less';
+@import '../../global/fonts.less';
+@import '../../global/colors.less';
+
+.chat-contact {
+  display: flex;
+  border-top: 1px solid @brightGray;
+  cursor: pointer;
+}
+
+.chat-contact__photo {
+  background: @brightGray;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.chat-contact__spacer {
+  flex-grow: 1;
+}
+
+
+.chat-contact__name {
+  .fontBold;
+  margin: 0.7rem 0 0 0;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.chat-contact__lastMessage {
+  .fontMedium;
+  color: @baseGray;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.chat-contact__lastMessageTime {
+  .fontMedium;
+  color: @baseGray;
+  margin: 0.8rem 0 0 0;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  text-align: end;
+}
+
+.chat-contact_highlighted {
+  background-color: @lavender;
+}
+
+.chat-contact__endSection {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 2rem;
+}

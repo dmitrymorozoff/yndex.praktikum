@@ -1,0 +1,72 @@
+@import '../../global/fonts.less';
+@import '../../global/styles.less';
+@import '../../global/colors.less';
+
+html, body {
+  height: 100%;  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;  
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+}
+
+.form__header {
+  .fontMedium;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: @eerieBlack;
+}
+
+.formBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.link-registration {
+  .fontRegular;
+  font-style: normal;
+  color: @ultramarineBlue;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.link-registration:hover {
+  text-decoration: underline;
+}
+
+.loginLabelStyle {
+  .fontMedium;
+  display: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: @baseGray;
+}
+
+.loginInputFieldStyle {
+  outline: 0;
+  margin-top: 1.8rem;
+  height: 1.5rem;
+  border-width: 0 0 1px;
+  border-color: @ultramarineBlue;
+}

@@ -1,0 +1,1 @@
+export { ChatContact } from './chatContact';

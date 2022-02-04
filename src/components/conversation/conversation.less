@@ -1,0 +1,137 @@
+@import '../../global/fonts.less';
+@import '../../global/styles.less';
+@import '../../global/colors.less';
+
+@chatwindowBottomHeight: 12rem;
+
+.chatwindow {
+  height: 100%;
+}
+
+.chatwindow_no-selected-chat {
+  .fontRegular;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  color: @baseGray;
+}
+
+.chatwindow__header_profileimage_small {
+  background: @brightGray;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.chatwindow__header {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 1.5rem;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 1rem 0;
+}
+
+.chatwindow__header_settings:after {
+  content: '\2807';
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.conversation__date {
+  .fontRegular;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  color: @baseGray;
+  text-align: center;
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  overflow-y: scroll;
+  height: calc(100% - @chatwindowBottomHeight);
+}
+
+.conversation__reader-msg-container {
+  max-width: 40%;
+  background: #F8F8F8;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0 15px 15px 0;
+}
+
+.conversation__reader-msg,
+.conversation__author-msg {
+  .fontRegular;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: @eerieBlack;
+  margin: 0;
+}
+
+
+p.conversation__time {
+  .fontRegular;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: @baseGray;
+  margin: 1rem 0 0 0;
+  text-align: right;
+}
+
+.conversation__author-msg-container {
+  display: flex;
+}
+
+.conversation__author-msg-container-content {
+  max-width: 40%;
+  background: #E4EDFD;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px 0 0 15px;
+}
+
+.conversation__spacer {
+  flex-grow: 1;
+}
+
+.form-conversation {
+  border-top: 1px solid #EAEAEA;
+  margin: 0 1.5rem;
+  padding: 1rem 0 0 0 ;
+  display: flex;
+}
+
+.form-conversation__attachment {
+  background: url('../../../static/attachment.png') no-repeat;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.form-conversation__inputfield {
+  flex-grow: 1;
+}
+
+.form-conversation__inputfield_style_default {
+
+  height: 2.5rem;
+  background: #EFEFEF;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 10px;
+}
+
+.form-conversation__submit-msg {
+  margin: 0.4rem;
+}
